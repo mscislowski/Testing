@@ -1,0 +1,26 @@
+html {
+	background-image: url(images/a1.jpg);
+	background-color: black;
+ 	background-repeat: no-repeat;
+ 	background-position: center;
+ 	background-attachment: fixed;
+ 	background-size: cover;
+ 	overflow-x: hidden;
+}
+
+.box {
+	position: absolute;
+	top: 50px;
+	left:50px;
+}
+
+.name{
+	font-weight:bold;
+}
+
+.nav {
+	position: fixed;
+	top: 10px;
+	width: 100%;
+	background-color: rgba(220,220,220,.4);
+}

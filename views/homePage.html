@@ -1,0 +1,50 @@
+
+
+
+
+
+<div class="header">
+    <div id="banner"></div>
+    <div class="bannerDivider"></div>
+    
+    <div class="menu">
+        <div class="buttonSpacer1"></div>
+        <div class="buttonSpacer2"></div>
+        <div class="buttonSpacer3"></div>
+        <div class="buttonSpacer4"></div>
+    </div>
+
+</div>
+
+<div class="content">
+    <div class="postArea">
+        <div ui-view>
+        
+        </div>
+    </div>
+
+
+    
+    
+    
+    
+    <div ng-controller="ChatController">
+        <div class="chatArea">
+            <div class="chatHeader"><h1>Public Chat</h1></div>
+            
+            <div class="chatSpacer"></div>
+    
+            <div id="chatPane">
+                <div=class="postList" ng-repeat="message in messages">
+                    <div id="userName">{{message.author}}</div>
+                    <div id="message">{{message.content}}</div>
+                </div>
+                
+                <form ng-submit="addMessage()">
+                    <input type="text" ng-model="message" id="chatBoxContent">
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
